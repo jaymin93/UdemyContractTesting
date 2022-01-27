@@ -1,0 +1,38 @@
+{
+  "consumer": {
+    "name": "Service_Consumer"
+  },
+  "provider": {
+    "name": "EmployeeList"
+  },
+  "interactions": [
+    {
+      "description": "A GET request to retrieve the employee details",
+      "providerState": "Employee Details for Id '1'",
+      "request": {
+        "method": "get",
+        "path": "/employee/1",
+        "headers": {
+          "Accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "id": 1,
+          "employeeName": "Karthik",
+          "email": "karthik@techgeek.co.in",
+          "city": "Auckland"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
