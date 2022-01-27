@@ -32,7 +32,7 @@ namespace ContactTesting.Tests
             };
 
             new PactVerifier(config)
-                .ServiceProvider("EmployeeList", "http://localhost:5000/api")
+                .ServiceProvider("EmployeeList", "https://employeeapi20220127123142.azurewebsites.net/api")
                 .HonoursPactWith("Service_Consumer")
                 .PactUri(@"pacts\service_consumer-employeelist.json")
                 .Verify();
