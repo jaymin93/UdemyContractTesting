@@ -7,6 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="logs\employeelist_mock_service.log" />
+    <None Remove="pacts\service_consumer-employeelist.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="logs\employeelist_mock_service.log">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pacts\service_consumer-employeelist.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
     <PackageReference Include="PactNet.Windows" Version="3.0.2" />
     <PackageReference Include="xunit" Version="2.4.1" />

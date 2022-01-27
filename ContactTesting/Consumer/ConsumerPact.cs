@@ -21,8 +21,8 @@ namespace ContactTesting.Consumer
             var pactConfig = new PactConfig
             {
                 SpecificationVersion = "2.0.0",
-                PactDir = @"c:\contractUdemy\pacts",
-                LogDir = @"c:\contractUdemy\logs"
+                PactDir = @"pacts",
+                LogDir = @"logs"
             };
 
             PactBuilder = new PactBuilder(pactConfig);
