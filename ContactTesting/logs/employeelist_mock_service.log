@@ -1,0 +1,53 @@
+I, [2022-01-24T22:52:50.479980 #24360]  INFO -- : Cleared interactions for example ""
+I, [2022-01-24T22:52:50.587262 #24360]  INFO -- : Registered expected interaction GET /employee/2
+D, [2022-01-24T22:52:50.588306 #24360] DEBUG -- : {
+  "description": "A GET request to retrieve the employee details",
+  "providerState": "Employee Details for Id '2'",
+  "request": {
+    "method": "get",
+    "path": "/employee/2",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "id": 2,
+      "employeeName": "Prashanth",
+      "email": "prashanth@gmail.com",
+      "city": "chennai"
+    }
+  },
+  "metadata": null
+}
+I, [2022-01-24T22:52:50.605212 #24360]  INFO -- : Received request GET /employee/2
+D, [2022-01-24T22:52:50.605306 #24360] DEBUG -- : {
+  "path": "/employee/2",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Host": "localhost:9224",
+    "Accept": "application/json",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2022-01-24T22:52:50.606211 #24360]  INFO -- : Found matching response for GET /employee/2
+D, [2022-01-24T22:52:50.606211 #24360] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "id": 2,
+    "employeeName": "Prashanth",
+    "email": "prashanth@gmail.com",
+    "city": "chennai"
+  }
+}
+I, [2022-01-24T22:52:50.619138 #24360]  INFO -- : Verifying - interactions matched for example ""
+I, [2022-01-24T22:52:50.635100 #24360]  INFO -- : Writing pact for EmployeeList to c:/contractUdemy/pacts/service_consumer-employeelist.json
+I, [2022-01-24T22:52:50.665020 #24360]  INFO -- : Cleared interactions for example ""
