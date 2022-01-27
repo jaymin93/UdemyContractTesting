@@ -15,7 +15,7 @@ namespace ContactTesting.Mock
 
         public APIClient(string baseUri = null)
         {
-            _client = new HttpClient { BaseAddress = new Uri(baseUri ?? "http://localhost:5000") };
+            _client = new HttpClient { BaseAddress = new Uri(baseUri ?? "https://employeeapi20220127123142.azurewebsites.net/") };
         }
 
         public EmployeeModel GetEmployeeDetails(string id)
