@@ -34,7 +34,7 @@ namespace ContactTesting.Tests
             new PactVerifier(config)
                 .ServiceProvider("EmployeeList", "http://localhost:5000/api")
                 .HonoursPactWith("Service_Consumer")
-                .PactUri(@"C:\contractUdemy\pacts\service_consumer-employeelist.json")
+                .PactUri(@"pacts\service_consumer-employeelist.json")
                 .Verify();
 
         }
